@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de mesas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="title"><h1>Reserva de mesas</h1></div>
+
+          <div class="subtitle"><h3>Seleccione Fecha y Hora para ver disponibilidad</h3></div> 
+
+      <div class="datetime-container">
+        
+        <div class="input-container ic2">
+          
+          <input name="data" id="reservationDate" type="date" class="input" >
+
+        
+        </div>
+        <div class="input-container ic2">
+          <select id="reservationTime" class="input-option">
+                    <option value="" disabled selected>Seleccione una hora</option>
+                    <option value="07:00">07:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="13:00">01:00 PM</option>
+                    <option value="16:00">04:00 PM</option>
+                    <option value="19:00">07:00 PM</option>
+                    <option value="22:00">10:00 PM</option>
+                </select>
+        </div>
+      </div>
+
+      <br><br>
+
+        <div class="subtitle">Mesas Disponibles</div>
+            <div id="availableTables" class="table-list"></div>
+
+            <br>
+
+        <div class="subtitle">Mesas Ocupadas</div> 
+            <div id="occupiedTables" class="table-list"></div>
+
+             <hr>
+
+
+        <div class="title"><h3>Realizar Reservas</h3></div>
+
+        <div class="input-container ic1">
+            
+        <input placeholder="Nombre del Cliente" type="text" class="input" id="customerName">
+        
+      </div>
+
+      <div class="input-container ic2">
+        <input class="input" type="number" name="" id="tableNumber" placeholder="Número de Mesa" min="1">
+      </div>
+      
+      
+
+      <button class="submit" type="text" id="reservarButton">Reservar Mesa</button>
+
+      <br><br> <hr>
+
+
+    <div class="title"><h3>Emitir reporte de Reservas</h3></div>
+
+     <div class="subtitle"><pre id="reportOutput"></pre></div> 
+
+    <button class="submit" type="text" id="reporteButton">Generar Reporte</button>
+        
+       
+
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
