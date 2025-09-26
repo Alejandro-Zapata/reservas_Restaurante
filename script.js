@@ -108,15 +108,6 @@ function reserveTable() {
     }
 
   const proposedStartTime = new Date(`${date}T${time}`);
-
-  
-
-  if (hour < 10 || hour >= 22){
-
-    alert('Lo sentimos, el horario de reservas es de 10:00 A.M hasta las 10:00 P.M.');
-    return;
-  }
-
   
 
   if(isTableAvailable( tableNumber, proposedStartTime)) {
